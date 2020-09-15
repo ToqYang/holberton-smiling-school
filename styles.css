@@ -1,0 +1,183 @@
+/* SUMMARY
+1. GLOBAL
+2. LAYOUT
+3. SECTION
+4. CARD
+*/
+
+
+/*** 1. GLOBAL ***/
+
+/* Reset / Normalize
+  ============================= */
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}
+
+@font-face {
+  font-family: 'holberton_school-icon';
+  src:  url('fonts/holberton_school-icon.eot?sq4eq4');
+  src:  url('fonts/holberton_school-icon.eot?sq4eq4#iefix') format('embedded-opentype'),
+    url('fonts/holberton_school-icon.ttf?sq4eq4') format('truetype'),
+    url('fonts/holberton_school-icon.woff?sq4eq4') format('woff'),
+    url('fonts/holberton_school-icon.svg?sq4eq4#holberton_school-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.html {
+  scroll-behavior: smooth;
+}
+
+[class^="icons__img"], [class*="icons__img"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'holberton_school-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*** 2. ROOT ***/
+
+/* Variables
+  ============================= */
+
+:root {
+  --color-white: #FFFFFF;
+
+  --font-sans-pro: 'Source Sans Pro', sans-serif;
+}
+
+
+/*** 3. HEADER ***/
+
+/* Container
+  ============================= */
+
+.header {
+  height: 150vh;
+  width: 100%;
+  background-image: url("Images/images/pic_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Img Logo
+  ============================= */
+
+.imagotype__img {
+  height: 1.9375rem;
+  width: 2.3125rem;
+}
+
+.imagotype__logo {
+  width: 6.9375rem;
+  height: 2rem;
+}
+
+.icons__img--ham::before {
+  content: "\e911";
+  color: var(--color-white);
+  font-size: 1.2em;
+}
+
+
+/* Nav Bar
+  ============================= */
+
+.nav-link {
+  font-family: var(--font-sans-pro);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+
+
+
+/* Middle
+  ============================= */
+
+.title {
+  font-family: var(--font-sans-pro);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 7.5rem;
+  text-align: center;
+}
+
+.middle__text {
+  font-family: var(--font-sans-pro);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.register-btn {
+  border-radius: 1.375rem;
+  color: var(--color-white);
+  background-color: #C271FF;
+  font-size: 0.875rem;
+  border: 1px solid #C271FF;
+  padding: 1em 1em;
+  box-shadow: 1em;
+  font-family: var(--font-sans-pro);
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Techers Pro
+  ============================= */
+
+.title-h2 {
+  font-family: var(--font-sans-pro);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+  /*text-align: center;*/
+}
+
+/* Pro
+  ============================= */
+
+.pro {
+  margin-top: 12rem;
+}
+
+.pro__img {
+  border-radius: 10rem;
+  height: 9.375rem;
+  width: 9.375rem;
+}
+
+.pro__profile {
+  width: 9.375rem;
+}
+
+.pro__title {
+  font-size: 1.125rem;
+}
+
+.pro__txt {
+  font-size: 1rem;
+}
+
+.pro__txt, .pro__title {
+  text-align: center;
+}
+
+
+
+@media (max-width: 576px) {
+  /*** 3. HEADER ***/
+  .title {
+    font-size: 3.8125rem;
+  }
+}
