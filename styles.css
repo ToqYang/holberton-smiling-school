@@ -63,11 +63,11 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
   ============================= */
 
 .header {
-  height: 150vh;
   width: 100%;
   background-image: url("Images/images/pic_1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 0;
 }
 
 /* Img Logo
@@ -101,6 +101,10 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
 }
 
 
+.nav-link:hover {
+  opacity: 0.9;
+}
+
 
 /* Middle
   ============================= */
@@ -127,10 +131,14 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
   font-size: 0.875rem;
   border: 1px solid #C271FF;
   padding: 1em 1em;
-  box-shadow: 1em;
+  box-shadow: 0 0 3em rgba(0, 0, 0, .5);
   font-family: var(--font-sans-pro);
   font-weight: bold;
   font-style: normal;
+}
+
+.register-btn:hover {
+  opacity: 0.9;
 }
 
 /* Techers Pro
@@ -148,7 +156,21 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
   ============================= */
 
 .pro {
-  margin-top: 12rem;
+  margin-top: 10rem;
+  box-sizing: border-box;
+}
+
+.pro__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+}
+
+.title-h2 {
+  margin-bottom: 7rem;
 }
 
 .pro__img {
@@ -159,6 +181,9 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
 
 .pro__profile {
   width: 9.375rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .pro__title {
@@ -169,15 +194,52 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
   font-size: 1rem;
 }
 
-.pro__txt, .pro__title {
+.pro__title, .pro__txt {
   text-align: center;
 }
 
 
 
+
+
 @media (max-width: 576px) {
   /*** 3. HEADER ***/
+
+    /* Title
+  ============================= */
   .title {
     font-size: 3.8125rem;
+  }
+
+  /* Container
+  ============================= */
+  .header {
+    background-position: -45em;
+  }
+
+  /* Nav
+  ============================= */
+  .nav-link:active {
+    opacity: 0.9;
+  }
+
+  .register-btn:active {
+    opacity: 0.9;
+  }
+
+  /* Pro
+    ============================= */
+  .pro__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  /*** 3. HEADER ***/
+
+  /* Pro
+  ============================= */
+  .header {
+    background-position: -25em;
   }
 }
