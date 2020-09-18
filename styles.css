@@ -223,7 +223,6 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
 
 .carousel-b {
   background-color: #C271FF;
-  width: 100vw;
   display: flex;
   align-items: stretch;
   padding: 5rem 0;
@@ -621,12 +620,18 @@ th, .table thead th {
     margin: 0;
   }
 
-  /*** 2. FAQ ***/
+  /*** 2-PRICING ***/
 
   /* Container
     ============================= */
   .faq__container {
     margin: 1rem 0;
+  }
+
+  /*** 3. HEADER ***/
+
+  .header-pricing {
+    background-position: -55rem;
   }
 }
 
@@ -663,5 +668,9 @@ th, .table thead th {
 @media (max-width: 1000px) {
   .faq__container {
     margin: 1rem 0;
+  }
+
+  .header-pricing {
+    background-position: -28em;
   }
 }
