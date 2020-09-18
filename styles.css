@@ -545,7 +545,21 @@ th, .table thead th {
   border: 0;
 }
 
+/*** 2. FAQ ***/
 
+/* Container
+  ============================= */
+
+.faq__container {
+  margin: 1rem 12rem;
+}
+
+.faq__question {
+  margin-top: 4rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 4rem;
+}
 
 @media (max-width: 576px) {
   /*** 3. HEADER ***/
@@ -607,6 +621,13 @@ th, .table thead th {
     margin: 0;
   }
 
+  /*** 2. FAQ ***/
+
+  /* Container
+    ============================= */
+  .faq__container {
+    margin: 1rem 0;
+  }
 }
 
 
@@ -635,5 +656,12 @@ th, .table thead th {
 
   .table--margin {
     margin: 0;
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .faq__container {
+    margin: 1rem 0;
   }
 }
