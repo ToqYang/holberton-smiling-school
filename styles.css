@@ -93,6 +93,10 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
 /* Nav Bar
   ============================= */
 
+.navbar-nav {
+  margin-right: 6rem;
+}
+
 .nav-link {
   font-family: var(--font-sans-pro);
   font-style: normal;
@@ -495,6 +499,53 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
 
 
 
+/** PRICING **/
+
+
+/*** 1. HEADER ***/
+
+/* Container
+  ============================= */
+.header-pricing {
+  width: 100%;
+  background-image: url("Images/images/pic_2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0;
+  font-size: var(--font-sans-pro);
+}
+
+.icons__img--check::before {
+  content: "\e905";
+  font-size: 2rem;
+  color: #82D24F;
+}
+
+
+/* Table
+  ============================= */
+
+.table {
+  table-layout: fixed;
+  width: 80%;
+}
+
+.table--margin {
+  margin: 4rem 10rem;
+}
+
+.table td, .table {
+  padding: 1.5rem;
+  border-top: 0;
+  border-bottom: 1px solid gray;
+  vertical-align: middle;
+}
+
+th, .table thead th {
+  border: 0;
+}
+
+
 
 @media (max-width: 576px) {
   /*** 3. HEADER ***/
@@ -513,6 +564,10 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
 
   /* Nav
   ============================= */
+  .navbar-nav {
+    margin-right: 0;
+  }
+
   .nav-link:active {
     opacity: 0.9;
   }
@@ -547,6 +602,11 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
     justify-content: center;
     margin-top: 2rem;
   }
+
+  .table--margin {
+    margin: 0;
+  }
+
 }
 
 
@@ -566,5 +626,14 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
   .img-carousel {
     height: auto;
     width: 10rem;
+  }
+
+
+  .navbar-nav {
+    margin-right: 0;
+  }
+
+  .table--margin {
+    margin: 0;
   }
 }
