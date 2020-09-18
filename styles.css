@@ -157,6 +157,7 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
 
 .pro {
   margin-top: 10rem;
+  padding-bottom: 5rem;
   box-sizing: border-box;
 }
 
@@ -187,7 +188,9 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
 }
 
 .pro__title {
+  margin-top: 1rem;
   font-size: 1.125rem;
+  font-weight: 900;
 }
 
 .pro__txt {
@@ -200,12 +203,158 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
 
 
 
+/*** 4. MAIN ***/
+
+/* Title
+============================= */
+
+.main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+/* Carrousel
+============================= */
+
+.carousel-b {
+  background-color: #C271FF;
+  width: 100vw;
+  display: flex;
+  align-items: stretch;
+  padding: 5rem 0;
+}
+
+.testimonials {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.testimonials__container {
+  justify-content: center;
+}
+
+
+/* Carrousel
+============================= */
+
+.img-carousel {
+  height: 10rem;
+  border-radius: 12rem;
+}
+
+.quoute__txt, .quoute__title, .quoute__job {
+  color: var(--color-white);
+  font-family:  var(--font-sans-pro);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.375rem;
+}
+
+.quoute__title {
+  font-weight: bold;
+}
+
+.quote_txtc {
+  width: 60%;
+}
+
+.prev-first {
+  opacity: 0;
+}
+
+.prev-first:hover {
+  visibility: visible;
+}
+
+/*** 5. MOST POPULAR VIDEOS  ***/
+
+.title-h2-videos {
+  font-family: var(--font-sans-pro);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: 6rem;
+  margin-bottom: 4rem;
+}
+
+
+/* Media
+============================= */
+
+.mcard__video {
+  width: 15.938rem;
+  height: 9.625rem;
+  border-top: 2rem;
+}
+
+.mcard__starts {
+  height: 0.938rem;
+  width: 0.938rem;
+}
+
+.mcard__img {
+  height: 1.875rem;
+  width: 1.875rem;
+  border-radius: 12rem;
+}
+
+/* Text
+============================= */
+
+.mcard {
+  width: 16rem;
+}
+
+.mcard__title, .mcard_text, .mcard__name {
+  font-family:  var(--font-sans-pro);
+}
+
+.mcard__title {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.mcard_text {
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+
+.mcard__name, .mcard__time {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #C271FF;
+}
+
+.mcard_text {
+  opacity: 0.5;
+}
+
+.card {
+  border: 0;
+}
+
+.mcard__play {
+  position: relative;
+  height: 4rem;
+  width: 4rem;
+  top: -7rem;
+  left: 5.7rem;
+}
+
+.mcard__video {
+  box-sizing: border-box;
+  height: 9.625rem;
+}
+
 
 
 @media (max-width: 576px) {
   /*** 3. HEADER ***/
 
-    /* Title
+  /* Title
   ============================= */
   .title {
     font-size: 3.8125rem;
@@ -232,6 +381,15 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
   .pro__container {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  /*** 4. MAIN ***/
+  /* Carrousel
+  ============================= */
+
+  .img-carousel {
+    height: auto;
+    width: 10rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -241,5 +399,14 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
   ============================= */
   .header {
     background-position: -25em;
+  }
+
+  /*** 4. MAIN ***/
+  /* Carrousel
+  ============================= */
+
+  .img-carousel {
+    height: auto;
+    width: 10rem;
   }
 }
