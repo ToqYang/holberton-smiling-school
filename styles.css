@@ -351,6 +351,71 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
 
 
 
+/*** 5. SMILES ***/
+
+/* Container
+============================= */
+
+.smiles {
+  background-color: #071629;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.smiles > h2 {
+  margin-top: 3em;
+}
+
+.smiles__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.smiles__wrap {
+  margin: 0 4em;
+}
+
+.smiles__contxt {
+  margin-top: 1em;
+  margin-left: 4em;
+  margin-right: 4em;
+  margin-bottom: 2em;
+}
+
+/* Text
+============================= */
+
+.smiles__title, .smiles__txt {
+  font-family: var(--font-sans-pro);
+  font-style: normal;
+  color: var(--color-white);
+  text-align: center;
+}
+
+.smiles__title {
+  font-weight: 600;
+  font-size: 1.125rem;
+  margin-top: 1em;
+}
+
+.smiles__txt {
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+
+/* Image
+============================= */
+
+.smiles__img {
+  height: 2.25rem;
+  width: 2.8125rem;
+}
+
+
 @media (max-width: 576px) {
   /*** 3. HEADER ***/
 
@@ -391,6 +456,7 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
     width: 10rem;
   }
 }
+
 
 @media (max-width: 768px) {
   /*** 3. HEADER ***/
