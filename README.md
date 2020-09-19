@@ -10,6 +10,7 @@
 - CSS
 - Responsive Design
 - Figma
+- Bootstrap
 
 ## Built With
 
