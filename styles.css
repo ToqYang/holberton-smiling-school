@@ -560,6 +560,29 @@ th, .table thead th {
   margin-bottom: 4rem;
 }
 
+
+
+/** COURSES **/
+
+/** 1. HEADER **/
+
+.header-courses {
+  width: 100%;
+  background-image: url("Images/images/pic_3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0;
+  font-size: var(--font-sans-pro);
+}
+
+.phrase-title {
+  padding: 0 2rem 3rem 2rem;
+  flex-basis: 33rem;
+}
+
+
+
+
 @media (max-width: 576px) {
   /*** 3. HEADER ***/
 
