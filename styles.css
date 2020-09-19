@@ -102,13 +102,25 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
   font-style: normal;
   font-weight: bold;
   font-size: 0.75rem;
+  color: var(--color-white);
 }
 
-
-.nav-link:hover {
-  opacity: 0.9;
+.nav-a:hover {
+  color: #C271FF;
 }
 
+.nav-a::after {
+  content: "";
+  width: 0px;
+  height: 3px;
+  display: block;
+  background: var(--color-white);
+  transition: 300ms;
+}
+
+.nav-a:hover::after {
+  width: 100%;
+}
 
 /* Middle
   ============================= */
