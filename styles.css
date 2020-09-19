@@ -566,6 +566,9 @@ th, .table thead th {
 
 /** 1. HEADER **/
 
+/* Container
+  ============================= */
+
 .header-courses {
   width: 100%;
   background-image: url("Images/images/pic_3.jpg");
@@ -580,6 +583,61 @@ th, .table thead th {
   flex-basis: 33rem;
 }
 
+/* Search filter
+  ============================= */
+
+.search {
+  background-color: #C271FF;
+  padding: 2rem;
+}
+
+.icons__img--search__logo::after {
+  content: "\e913";
+  color: var(--color-white);
+}
+
+.form-control:focus {
+  border-color: none;
+  box-shadow: none;
+}
+
+.input-group-text, .form-control, .mbn {
+  background-color: #d195ff;
+  border-color: #d195ff;
+  color: #e8caff;
+  font-family: var(--font-sans-pro);
+  font-weight: 300;
+  font-size: 1.4375rem;
+}
+
+.mbn, .input-group {
+  width: 100% !important;
+}
+
+/* Dropdown
+  ============================= */
+
+.mbn, .mbn:active, .mbn:hover, .mbn:focus, .mbn:focus-within, .mbn:visited {
+  background-color: #d195ff !important;
+  border-color: #d195ff !important;
+  border-bottom-color: white !important;
+  box-shadow: none !important;
+}
+
+.mbn, .search__title {
+  color: var(--color-white);
+}
+
+.search__title {
+  font-family: var(--font-sans-pro);
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+
+.dropdown-item:hover {
+  color: #d195ff;
+  background-color: transparent;
+}
 
 
 
